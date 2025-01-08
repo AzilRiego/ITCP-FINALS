@@ -11,7 +11,7 @@ def balik():
             os.system('cls')
             print("...")
             time.sleep(2)
-            print("Apologies, but you can't stay here.")
+            print("\nApologies, but you can't stay here.")
             time.sleep(2)
             print('')
             print("I'll be the one who'll get in trouble if you stay here longer than you should be.")
