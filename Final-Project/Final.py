@@ -112,14 +112,15 @@ def greet(name):
     balik()
 
 def learn_lists():
-    print("Welcome to how to make a List!")
-    print("\nA list in Python is a collection of items, which can hold different data types.")
-    print("You can create a list by enclosing items in square brackets [ ], separated by commas.")
+    print("In Python, a list is a built-in data structure that is used to store a collection of items in a single variable."
     go()
 
-    print("\nLet's create a list of fruits:")
-    print("Example: fruits = ['apple', 'banana', 'cherry']")
-    fruits = ['apple', 'banana', 'cherry']
+    print("\nShall we create a list of fruits using LIST?")
+    os.system('cls')
+    print("Lets make a list of my favorite fruit")
+    os.system('cls')
+    print("Example: fruits = ['Orange', 'Grapes', 'Watermelon']")
+    fruits = ['Orange', 'Grapes', 'Watermelon']
     print("")
     print(f"Here's a sample list: {fruits}")
     go()
@@ -138,6 +139,8 @@ def learn_lists():
     new_fruit = input("Enter the name of a fruit to add to the list: ")
     fruits.append(new_fruit)
     print(f"Updated list of fruits: {fruits}")
+    time.sleep(1)
+    print("Should I try that fruit?")
     go()
 
     print("\nYou can remove items from a list using the remove() method.")
@@ -146,8 +149,12 @@ def learn_lists():
         print("")
         fruits.remove(remove_fruit)
         print(f"Updated list of fruits: {fruits}")
+        time.sleep(1)
+        print("I never liked that fruit anyway.")
     else:
         print(f"{remove_fruit} is not in the list!")
+        time.sleep(1)
+        print("What fruit have you eaten to have hallucinations?")
     go()
 
     print("\nYou can loop through a list to process each item.")
@@ -160,11 +167,11 @@ def learn_lists():
         print(f"-{fruit}") 
     go()
 
-    print("\nGreat job! You've learned the basics of Python lists.")
+    print("\nKnowledge Acquired: Lists in terms of Python.")
     time.sleep(2)
-    print("Lists are versatile and a powerful tool in Python programming.")
+    print("Now I crave some fruit.")
     time.sleep(2)
-    print("Experiment with lists to discover even more!")
+    print("I'm hungry.")
     balik()
 
 def learn_modules():
