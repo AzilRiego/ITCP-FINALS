@@ -30,9 +30,12 @@ def learn_docstrings():
     os.system('cls')
     time.sleep(2)
     print("\nIt provides an explanation of what the code does, its purpose,")
+    os.system('cls')
     time.sleep(2)
+    print("\nIt provides an explanation of what the code does, its purpose, and sometimes details about parameters and return values.
+   ")
     print("They are enclosed in triple quotes (\"\"\" or ''') and are usually the first statement in a function, class, or module.")
-    input("\nPress Enter to see an example of a function with a docstring...")
+    input("\nPress Enter to Proceed.")
 
     # Step 1: Example of a Docstring
     def example_function():
