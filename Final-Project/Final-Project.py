@@ -1,5 +1,27 @@
 import os
 import time
+menu = True 
+
+def return():
+  while menu:
+    back = input("Go back? (Yes/No): ")
+    if back.lower() == "yes":
+      print("Aight")
+      time.os(2)
+      os.sytem('cls')
+      print("Aight.")
+      time.os(2)
+      os.sytem('cls')
+      print("Aight..")
+      time.os(2)
+      os.sytem('cls')
+      print("Aight...")
+      time.os(2)
+      break
+
+  
+
+
 
 os.system('cls')
 time.sleep(1)
