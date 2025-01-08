@@ -20,7 +20,7 @@ def balik():
                 
 def go():
     print("")
-    input("(Press Enter To Proceed)")
+    input("Press Enter To Proceed.")
 
 def learn_docstrings():
     time.sleep(2)
@@ -68,9 +68,25 @@ def example_function():
     go()
 
     print("\nWhy use docstrings?")
-    print("- They make your code easier to understand.")
-    print("- They serve as documentation for others (and yourself!).")
-    print("- Tools like IDEs and documentation generators use docstrings.")
+    time.sleep(2)
+    os.system('cls')
+          
+    print("Improved readability:")
+    time.sleep(2)
+    print(" Helps others (and your future self) understand the purpose and usage of your code.")
+    time.sleep(2)
+    os.system('cls')
+    print("Standardized documentation:")
+    time.sleep(2)
+    os.system('cls')
+    print("Many tools, like Sphinx, can automatically generate documentation from docstrings.")
+    time.sleep(2)
+    os.system('cls')
+    print("Accessible in runtime:")
+    time.sleep(2)
+    os.system('cls')
+    print("Developers can view docstrings without referring to external documentation.")
+    
 
     go()
 
@@ -92,7 +108,7 @@ def greet(name):
 
     print("\nTry writing and testing your own function in a Python environment!")
 
-    print("\nGreat job! You've learned the basics of Python docstrings.")
+    print("\nKnowledge Acquired: Python Docstrings.")
     balik()
 
 def learn_lists():
