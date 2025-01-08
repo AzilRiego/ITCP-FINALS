@@ -831,13 +831,13 @@ while menu:
                 print("R - Senior")
                 isSY = input("Please enter your current year level in DLL:")
                 if isSY.lower() == "f":
-                    print("Hi Freshman!")
+                    print("Welcome, Freshman!")
                 elif isSY.lower() == "s":
-                    print("Hi Sophomore!")
+                    print("Welcome back, Sophomore!")
                 elif isSY.lower() == "j":
-                    print("Hi Junior!")
+                    print("You're almost there, Junior!")
                 elif isSY.lower() == "r":
-                    print("Hi Senior!")
+                    print("A few steps left, Senior!")
                 else:
                     print("Invalid year level, please try again")
                 isScho = input("Do you need this scholarship?(Y/N): ")
