@@ -300,7 +300,7 @@ def deposit(account_name, account_balance):
         amount = eval(input("Enter amount to deposit: "))
         if amount > 0:
             account_balance += amount
-            print("Deposited PHP", amount, ". Current balance: PHP", account_balance)
+            print("Deposited: ", amount, ". Current balance: ", account_balance)
             breakdown_denomination(amount)
         else:
             print("Deposit amount must be greater than 0.")
@@ -316,7 +316,7 @@ def withdraw(account_name, account_balance):
             print("Insufficient balance!")
         elif amount > 0:
             account_balance -= amount
-            print("Withdrew PHP", amount, ". Current balance: PHP", account_balance)
+            print("Withdrew: ", amount, ". Current balance: ", account_balance)
         else:
             print("Withdrawal amount must be greater than 0.")
     return account_balance
@@ -361,12 +361,22 @@ def main():
     account_balance = 0
 
     while True:
-        print("\n=== Welcome to J-Bank ===")
+        print("\nCyber's Bank")
+        time.sleep(2)
+        print("Sadly, these aren't real money.")
+        time.sleep(1)
         print("1. Create Account")
+        time.sleep(1)
         print("2. Deposit")
+        time.sleep(1)
         print("3. Withdraw")
+        time.sleep(1)
         print("4. Check Balance")
+        time.sleep(1)
         print("5. Exit")
+        time.sleep(10)
+        print("6. Rob")
+        time.sleep(1)
         choice = input("Choose an option (1-5): ")
 
         if choice == "1":
@@ -382,14 +392,22 @@ def main():
             os.system('cls')
             check_balance(account_name, account_balance)
         elif choice == "5":
-            print("Thank you for using the banking system!")
+            print("Thank you for emptying the creator's wallet.")
+            time.sleep(1)
+            os.system('cls')
+            print("I mean thank you for using Cyber's Bank!")
             balik()
+            break
+        elif choice == "6":
+            print("I can't let you do that.")
+            time.sleep(1)
+            print("Security.")
             break
         else:
             print("Invalid option. Please try again.")
 
 def learn_functions():
-    print("Welcome to the Python Functions Learning Program!")
+    print("What is a Function?")
     print("\nA function is a reusable block of code that performs a specific task.")
     print("You define a function in Python using the 'def' keyword.")
     print("\nExample:")
@@ -845,7 +863,9 @@ while menu:
                     print("You have been granted a full scholarship, thank you for choosing DLL")
                     balik()
                 else:
-                    print("Okay, have a nice day")
+                    print("Very well.")
+                    time.sleep(3)
+                    print("Someone's rich and doesn't need scholarship.")
                     balik()
             else:
                 print("Sorry, you are not eligible")
@@ -854,9 +874,14 @@ while menu:
             print("Sorry, you are not eligible")
             balik()
     elif choice == 9:
-        Initialize()
-        print("Welcome to loops! Using the loop function")
-        print("we can repeat a code block as many times we want")
+        Wait()
+        print("It feels like Deja Vu.")
+        time.sleep(1)
+        print("It's the Loops!")
+        time.sleep(1)
+        print("Well, you can tell the purpose of the code based on it's name.")
+        time.sleep(1)
+        print("You can repeat a code block as many times you want by using Loops."))
         time.sleep(1)
         print()
         print("It should look like this:")
@@ -873,26 +898,39 @@ while menu:
         for x in range(1,11):
             print("     Hello World")
         time.sleep(1)
-        print('Neat!')
+        print("'Hello, World', Indeed")
         balik()
     elif choice == 10:
-        Initialize()
-        print("Welcome. You can factorial any number here!")
+        Wait()
+        print("Welcome to Factorials.")
         factorial = 1
         print("")
-        start = eval(input("So, enter the number you want to factorial: "))
+        start = eval(input("Enter the number you want to factorial: "))
         for x in range(start,0,-1):
             print(x)
             factorial *= x
         print(f"the factorial of {start} is {factorial} ")
         time.sleep(1)
-        print("Neat")
+        print("As simple as that.")
         balik()
     elif choice == 11:
         Wait()
-        print("Now let's utilize loops to make some neat shapes!")
+        print("How are Pyramids made?")
+        time.sleep(1)
+        print("... in Python.")
+        time.sleep(1)
+        print("I was informed that the creator used a lot of 'print' commands in her FirstEverProgram.")
+        time.sleep(1)
+        print("And she was only making a diamond.")
+        time.sleep(1)
+        print("And just recently, she learned how to make shapes with loops.")
+        time.sleep(1)
+        print("It's more easier and less of a hussle.")
         time.sleep(2)
-        print("Let's utilize this code block to create a simple triangle:")
+        print("Let's try to make a simple triangle.")
+        time.sleep(2)
+        print("That apparently looks like a slide.")
+        time.sleep(1)
         print(" ")
         print("for x in range(1,6):")
         print("      print('* ' * x)")
@@ -903,99 +941,15 @@ while menu:
             print('* ' * x)
         print("")
         print("Now go and try the others!")
-        go()
-        while menu:
-            os.system('cls')
-            print("                                            >Triangles & Others<")
-            print("                                     █▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬█")
-            print("                                     █   [#1] Diamond                  █")
-            print("                                     █   [#2] An Arrow                 █")
-            print("                                     █   [#3] Number Rhombus           █")
-            print("                                     █   [#4] Upside-down Pyramid      █")
-            print("                                     █   [#5] Main Menu                █")
-            print("                                     █▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬█")
-            print("Have a go with it!")
-            option = int(input("Enter the number of the shape you want to see:"))
-            if option == 1:
-                os.system('cls')
-                for x in range(1, 6):
-                    for y in range(6,x,-1):
-                        print(" ",end=" ")
-                    for z in range(1,x+1):
-                        print("*",end=" ")
-                    for a in range(1,x+1):
-                        print("*",end=" ")
-                    print()
-                for x in range(1, 6):
-                    for y in range(1,x+1):
-                        print(" ",end=" ")
-                    for z in range(6,x,-1):
-                        print("*",end=" ")
-                    for a in range(6,x,-1):
-                        print("*",end=" ")
-                    print()
-                go()
-            elif option == 2:
-                    os.system('cls')
-                    for x in range(1, 5):
-                        for y in range(6,x,-1):
-                            print(" ",end=" ")
-                        for z in range(1,x+1):
-                            print("*",end=" ")
-                        for a in range(1,x+1):
-                            print("*",end=" ")
-                        print()
+        os.system('cls')
+        
 
-                    for x in range(1, 6):
-                        for y in range(1,6):
-                            print(" ",end=" ")
-                        for z in range(1,3):
-                            print("*",end=" ")
-                        print()
-                    go()
-            elif option == 3:
-                os.system('cls')
-                for x in range(1, 7):
-                    for y in range(6,x,-1):
-                        print(" ",end=" ")
-                    for z in range(x,1,-1):
-                        print(z,end=" ")    
-                    for a in range(1,x+1):
-                        print(a,end=" ")
-                    print()
-
-                for x in range(5, 0,-1):
-                    for y in range(6,x,-1):
-                        print(" ",end=" ")
-                    for z in range(x,1,-1):
-                        print(z,end=" ")
-                    for a in range(1,x+1):
-                        print(a,end=" ")
-                    print()
-                go()
-            elif option == 4:
-                os.system('cls')
-                t = int(input("Enter a number range: "))
-                for x in range(1,t):
-                    for a in range(1,x,1):
-                        print(" ",end="  ")
-                    for b in range(t,x,-1):
-                        print("^ ",end=" ")   
-                    for b in range(t,x,-1):                            
-                        print("* ",end=" ")        
-                    print()  
-                go()
-            elif option == 5:
-                break
-            else:
-                print("INVALID INPUT. PLEASE TRY AGAIN")
-                continue
-
+                    
     elif choice == 12:
-        Initialize()
+        Wait()
         grades()
     elif choice == 13:
-            Initialize()
+            Wait()
             name = input("Enter your name: ")
             print("")
             age = int(input("Enter your age: "))
@@ -1053,19 +1007,19 @@ while menu:
                 balik()
 
     elif choice == 14:
-        Initialize()
+        Wait()
         main()
     elif choice == 15:
-        Initialize()
+        Wait()
         learn_lists()
     elif choice == 16:
-        Initialize()
+        Wait()
         learn_modules()
     elif choice == 17:
-        Initialize()
+        Wait()
         learn_functions()
     elif choice == 18:
-        Initialize()
+        Wait()
         learn_docstrings()
     elif choice == 0:
         os.system('cls')
