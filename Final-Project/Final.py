@@ -36,7 +36,7 @@ def learn_docstrings():
     print("They are enclosed in triple quotes (\"\"\" or ''') and are usually the first statement in a function, class, or module.")
     input("\nPress Enter to Proceed.")
 
-    # Step 1: Example of a Docstring
+    
     def example_function():
         """
         This is a sample docstring.
@@ -179,8 +179,7 @@ def learn_modules():
     print("Python comes with many built-in modules, and you can also create your own.")
     print("\nTo use a module, you import it using the 'import' keyword.")
     go()
-
-    # Step 1: Using a Built-in Module
+    
     print("\nLet's use the built-in 'math' module to perform calculations.")
     print("Import the 'math' module and use its 'sqrt()' function to calculate the square root.")
     import math
@@ -223,18 +222,16 @@ def grades():
     project = int(input("Enter your score for the projects: "))
 
     FG = prelim * 0.15 + midterm * 0.15 + semif * 0.15 + final * 0.15 + quiz * 0.25 + project * 0.15 
-    print("Your Final Grade issssss", end=" ")
+    print("Your Final Grade is", end=" ")
     print(FG)
     if FG > 100:
-        print("Aw you cheated, fail")
-        print("Kaya mo yan")
+        print("Keep studying, you'll get there.")
         balik()
     elif FG >= 75:
-        print("Pasado ka! Yey!")
-        print("Good luck, keep it up!")
+        print("You passed! Congratulations!")
         balik()
     else:
-        print("Welp, only way is up from here")
+        print("Erm... Don't worry, you'll get there.")
         balik()
 
 def operations():
@@ -940,40 +937,54 @@ while menu:
         for x in range(1,6):
             print('* ' * x)
         print("")
-        print("Now go and try the others!")
+        print("Let's make a pyramid.")
         os.system('cls')
-        
-
+        def pyramid(rows)
+        for i in range(1, rows + 1):
+            print(" " * (rows - i), end="")
+            print("*" * (2 * i - 1))
+            rows = int(input("Enter the number of rows for the pyramid: ")) 
+            pyramid(rows)
+            print("Now they would assume that Aliens made the pyramids.")
+            break
                     
     elif choice == 12:
         Wait()
         grades()
     elif choice == 13:
-            Wait()
-            name = input("Enter your name: ")
-            print("")
-            age = int(input("Enter your age: "))
-            print()
-            print("\nPlease select from these items:")
-            print("1. Lamb: 350")
-            print("2. Sirloin: 450")
-            print("3. Caviar: 1000")
-            print("4. Truffle Oil: 1200")
-            print("5. Foie Gras: 800")
-            print("Enter '0' when you are done selecting items.")
+        Wait()
+        name = input("Enter your name: ")
+        print("")
+        age = int(input("Enter your age: "))
+        os.system('cls')
+        print("Let's go shopping!")
+        time.sleep(3)
+        print("Apparently the creator programmed the shop to be in some sort of fantasy game style.")
+        time.sleep(3)
+        print("Now the shelf is filled with 'Magic items'.")
+        time.sleep(3)
+        os.system('cls')
+        print()
+        print("\nPlease select from these items:")
+        print("1. Healing Potion: 100")
+        print("2. Used Shield: 300")
+        print("3. Black Cat (It's a pet): 1000")
+        print("4. The King's Sword: 3000")
+        print("5. Cursed Crown: 800")
+        print("Enter '0' when you are done selecting items.")
 
             total = 0
 
             while True:
                 item = int(input("\nEnter the number of the item you want to buy (or 0 to finish): "))
                 if item == 1:
-                    total += 350
+                    total += 100
                 elif item == 2:
                     total += 450
                 elif item == 3:
                     total += 1000
                 elif item == 4:
-                    total += 1200
+                    total += 3000
                 elif item == 5:
                     total += 800
                 elif item == 0:
@@ -982,7 +993,7 @@ while menu:
                     print("Invalid selection. Please choose a valid number.")
 
             if total == 0:
-                print("You didn't buy anything.")
+                print("What? afraid to try some 'harmless' fantasy items?")
 
             tax_percentage = 15
             discount_percentage = 10
@@ -1001,6 +1012,8 @@ while menu:
             confirm = input(f"\n{name}, do you accept the charges? (yes/no): ")
             if confirm == "yes":
                 print("Thank you for your purchase!")
+                time.sleep(1)
+                print("Enjoy your 'harmless' items.")
                 balik()
             else:
                 print("Purchase cancelled.")
